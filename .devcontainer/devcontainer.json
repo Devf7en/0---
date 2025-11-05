@@ -2,8 +2,10 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/universal
 {
 	"name": "Universal Development Environment",
-	// Microsoft universal image with multiple language support
-	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+	// Use custom Dockerfile based on Microsoft universal image
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
