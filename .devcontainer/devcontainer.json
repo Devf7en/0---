@@ -22,7 +22,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "docker --version && docker compose version",
+	"postCreateCommand": "bash .vscode/install-mcps.sh && docker --version && docker compose version",
 
 	// Configure tool-specific properties.
 	"customizations": {
